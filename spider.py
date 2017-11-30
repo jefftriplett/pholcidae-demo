@@ -53,6 +53,7 @@ def main(threads, url):
     with open(output_filename, 'w') as output_buffer:
         toml.dump(OUTPUT, output_buffer)
 
+    click.secho(f'writing {output_filename}', fg='green')
     click.secho('done', fg='green')
 
 
