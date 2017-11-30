@@ -37,7 +37,7 @@ def main(threads, url):
     value = parse.urlparse(url)
 
     settings = {
-        'protocol': '{0}://'.format(value.scheme),
+        'protocol': f'{value.scheme}://',
         'domain': value.netloc,
         'start_page': value.path,
         'threads': threads,
