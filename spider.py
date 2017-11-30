@@ -50,10 +50,11 @@ def main(threads, url):
     spider.start()
 
     output_filename = f'{domain_slug}.toml'
+    click.secho(f'writing {output_filename}', fg='green')
+
     with open(output_filename, 'w') as output_buffer:
         toml.dump(OUTPUT, output_buffer)
 
-    click.secho(f'writing {output_filename}', fg='green')
     click.secho('done', fg='green')
 
 

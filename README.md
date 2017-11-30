@@ -31,6 +31,7 @@ Usage Examples:
    200,http://localhost:8000/
    200,http://localhost:8000/about/
    200,http://localhost:8000/blog/
+   writing localhost-8000.toml
    done
 
    # view results in toml format for easy digestion
